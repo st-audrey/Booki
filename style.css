@@ -1,3 +1,50 @@
-.hello{
+*{
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #F0F2F6;
+}
+
+.container{
+    padding: 0 2rem 0;
+}
+
+.raleway{
     font-family: 'Raleway', sans-serif;
 }
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-container > img{
+    margin: 48px 0 0;
+    width: 3em;
+    object-fit: contain;
+}
+
+.header-container > nav{
+    margin-right: 0;
+}
+
+.header-container > nav > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header-container > nav > ul > li{
+    text-align: center;
+    font-size: 16px;
+    border-top: 2px solid transparent;
+    padding: 48px 20px 0;
+    color: black;
+}
+
+.header-container > nav > ul > li:hover{
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    cursor: pointer;
+}
+
+
