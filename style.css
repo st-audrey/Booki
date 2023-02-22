@@ -5,7 +5,7 @@
     list-style-type: none;
 }
 
-.container{
+.container1, .container2{
     padding: 0 2rem 0;
 }
 
@@ -72,15 +72,83 @@
     margin: 1rem 0 0 0;
 }
 
+section > h2{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.activities-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.activity-card{
+    width: 22%;
+    height: 430px;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 9%);
+}
+
+.activity-card-img{
+    width: 100%;
+    height: inherit;
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-vp{
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+.img-fp{
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+.img-pndc{
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+.img-ndlg{
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.activity-card-text-container{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.activity-card-text-container > p{
+    font-weight: 700;
+    margin: 0 0 0 1rem;
+}
 
 
 
 /* tablet */
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+    .activity-card{
+        height: 267px;
+    }
+    
+}
 
 /* phone */
 @media only screen and (max-width: 768px) {
-    .container{
+    .container1{
         padding: 0;
     }
 
@@ -117,6 +185,18 @@
         margin-top: 2rem;
         width: 100%;
     }
+
+    .activity-card{
+        width: 100%;
+        height: 190px;
+        margin-bottom: 1.5rem;
+        padding: 0;
+    }
     
+    .activities-container{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
     
 }
