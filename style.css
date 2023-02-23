@@ -63,6 +63,11 @@ h1{
     font-weight: 800;
 }
 
+h2{
+    font-size: 22px;
+    font-weight: 800;
+}
+
 .search-container{
     margin: 20px 0 35px 0;
     width: 372px;
@@ -201,6 +206,107 @@ h1{
     bottom: 27%;
 }
 
+.accommodations-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accommodations, .populars{
+    margin: 0;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+.accommodations{
+    width: 60%;
+    padding: 42px 40px 46px;
+    margin-right: 10px;
+}
+
+.accommodations > div{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+}
+
+.accommodation-card{
+    background-color:white;
+    padding: 4px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 9%);
+}
+
+.accommodation-card-img{
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 124px;
+}
+
+.img-ac{
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.img-hp{
+    background-image: url("images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+}
+
+.img-hmo{
+    background-image: url("images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+}
+
+.img-hme{
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.img-ap{
+    background-image: url("images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+}
+
+.img-aca{
+    background-image: url("images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+}
+
+.accommodation-card-text-container{
+    font-size: 14px;
+    padding: 4px 0 11px 16px;
+}
+
+.accommodation-card-text-container > p:first-of-type{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.accommodation-card-stars-container > i{
+    font-size: 12px;
+    color: #0065FC;
+}
+
+.accommodation-card-stars-container > i:last-of-type{
+    color: #F2F2F2;
+}
+
+.populars{
+    width: 26%;
+    padding: 41px 37px 41px;
+}
+
+.populars > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa-chart-line{
+    color: #0065FC;
+    margin-top: 5px;
+}
+
+
 .footer-container{
     display: flex;
     flex-direction: row;
@@ -222,11 +328,6 @@ h1{
 
 .footer-container > ul > li{
     margin: 1rem 0 0 0;
-}
-
-section > h2{
-    font-size: 22px;
-    font-weight: 800;
 }
 
 .accommodations-container{
@@ -292,8 +393,6 @@ section > h2{
     font-weight: 700;
     margin: 0 0 0 1rem;
 }
-
-
 
 /* tablet */
 @media only screen and (max-width: 992px) {
