@@ -67,6 +67,11 @@ h1, h2, h3{
     padding: 0 50px 0;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 
 /* HEADER */
 #header{
@@ -93,11 +98,6 @@ h1, h2, h3{
 .nav-link:hover {
     border-top: 2px solid #0065FC;
     cursor: pointer;
-}
-
-.nav-link > a{
-    text-decoration: none;
-    color: black;
 }
 
 .nav-link:hover > a{
@@ -293,6 +293,7 @@ h1, h2, h3{
 
 .card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
 }
 
 .txt-container{
@@ -356,6 +357,7 @@ h1, h2, h3{
     width: 23%;
     max-height: 445px;
     justify-content: start;
+    cursor: pointer;
 }
 
 .activity-card-img{
@@ -378,7 +380,7 @@ h1, h2, h3{
 
 
 /* tablet */
-@media only screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     #main{
         padding: 0 71px 0 70px;
@@ -432,7 +434,7 @@ h1, h2, h3{
 }
 
 /* phone */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     
     #header, #main{
