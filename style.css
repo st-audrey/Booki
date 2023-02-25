@@ -219,7 +219,7 @@ a{
  }
 
 .info-container{
-    margin: 30px 0 30px;
+    margin: 40px 0 40px;
 }
 
 .info-container > div{
@@ -254,7 +254,7 @@ a{
 }
 
 .accommodations{
-    padding: 42px 40px 46px;
+    padding: 42px 40px 0px;
     margin-right: 10px;
     flex-grow: 2;
 }
@@ -271,12 +271,12 @@ a{
     margin: 26px 0 0;
 }
 
-.accommodation2-card{
+.accommodation-card{
     padding: 4px 4px 11px 4px;
     height:199px;
 }
 
-.accommodation2-card-img{
+.accommodation-card-img{
     max-height:124px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -309,7 +309,7 @@ a{
 }
 
 .populars{
-    padding: 41px 40px 48px 37px;
+    padding: 41px 40px 0px 37px;
     flex-grow: 1;
 }
 
@@ -434,6 +434,12 @@ a{
         font-size: 13px;
     }
 
+    /* activities */
+
+    #activities{
+        margin-top: 76px;
+    }
+
     .activity-card{
         max-height: 267px;
     }
@@ -502,7 +508,8 @@ a{
     }
 
     .search-container{
-        margin: 20px auto 50px auto;
+        width: 100%;
+        margin: 36px auto 34px auto;
     }
 
     .search-container > input{
@@ -581,6 +588,19 @@ a{
 
     .accommodations-container{
         flex-direction: column-reverse;
+    }
+
+    
+    .accommodation-card{
+        max-width: 98%;
+    }
+
+    .populars{
+        padding: 26px 20px 20px 20px;
+    }
+
+    .popular-card{
+        max-width: 98%;
     }
 
     .populars-cards-container{
