@@ -608,4 +608,10 @@ a{
     .activity-card-img{
         max-height: 134px;
     }
+
+    .card-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
