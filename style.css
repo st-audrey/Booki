@@ -51,10 +51,6 @@ h1, h2, h3{
     margin: 0;
 }
 
-.m-neg-50{
-    margin: -50px 0 0 0;
-}
-
 .w-100{
     width: 100%;
 }
@@ -313,7 +309,7 @@ a{
 }
 
 .populars{
-    padding: 41px 40px 0 37px;
+    padding: 41px 40px 48px 37px;
     flex-grow: 1;
 }
 
@@ -327,13 +323,13 @@ a{
     margin-top: 26px;
 }
 
-.popular2-card{
+.popular-card{
     height: 144px;
     padding: 4px;
     margin-bottom: 33px;
 }
 
-.popular2-card-img{
+.popular-card-img{
     width:33%; 
     max-height: 144px;
     object-fit: cover;
@@ -342,13 +338,9 @@ a{
 }
 
 .popular-txt{
-    padding-top: 12px;
+    padding: 15px 16px 12px 22px;
+    max-height: 128px;
 }
-
-.popular-stars{
-    margin: 20px 0 0 0;
-}
-
 
  /* ACTIVITIES */
  .activities-container{
@@ -383,7 +375,7 @@ a{
 
 
 /* tablet */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
 
     #main{
         padding: 0 71px 0 70px;
@@ -415,16 +407,31 @@ a{
 
     .populars-cards-container{
         flex-direction: row;
+        justify-content: space-between;
         max-width: fit-content;
     }
 
-    .popular2-card{
+    .popular-card{
         max-width: 252px;
-        height: auto;
+        height: 144px;
+        margin-bottom : 0px;
+        width: 30%;
     }
 
-    .popular2-card-img{
-        height: 136px;
+    .popular-card-img{
+        object-fit: cover;
+    }
+
+    .popular-txt{
+        padding: 8px 12px 10px;
+    }
+
+    .popular-txt > div > p:first-of-type{
+        font-size: 14px;
+    }
+
+    .popular-txt > div > p{
+        font-size: 13px;
     }
 
     .activity-card{
@@ -536,6 +543,14 @@ a{
     .filters-btn-container > button{
         padding: 20px 12px 20px;
         justify-content: left;
+        font-size: 11px;
+        width: 160px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .filters-btn-container > button > i{
+        margin-top: -3px;
     }
 
     .fa-info{
@@ -544,14 +559,39 @@ a{
 
 
     /* lodging */
+
+    #lodging{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .accommodations, .populars{
+        border-radius: 0;
+    }
+
+    .accommodations{
+        background-color: white;
+        padding: 0;
+        margin: 26px 20px 0 20px;
+    }
+    
+    .accommodations > p{
+        display: none;
+    }
+
     .accommodations-container{
         flex-direction: column-reverse;
+    }
+
+    .populars-cards-container{
+        max-width:100%;
     }
 
     /* activities */
 
     #activities{
         padding: 0 20px 0 20px;
+        margin-top: 4rem;
     }
 
     .activities-container{
