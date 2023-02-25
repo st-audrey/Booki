@@ -276,7 +276,8 @@ a{
 }
 
 .accommodation2-card{
-    padding: 4px;
+    padding: 4px 4px 11px 4px;
+    height:199px;
 }
 
 .accommodation2-card-img{
@@ -297,7 +298,9 @@ a{
 }
 
 .txt-container{
-    margin: 0 0 0 1rem;
+    margin: 0 0 0 4%;
+    max-height: 76px;
+    justify-content: space-evenly;
 }
 
 .stars-container{
