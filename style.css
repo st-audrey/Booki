@@ -257,6 +257,7 @@ a{
 
 .accommodations{
     padding: 42px 40px 0px;
+    margin-right: 3%;
 }
 
 .accommodations > p {
@@ -309,7 +310,7 @@ a{
 }
 
 .populars{
-    padding: 41px 40px 0px 37px;
+    padding: 41px 35px 0px;
 }
 
 .fa-chart-line{
@@ -348,10 +349,6 @@ a{
     margin-bottom: 80px;
 }
 
-.activities-container > article{
-    width: 23%;
-}
-
 .activity-card{
     max-height: 445px;
     cursor: pointer;
@@ -379,7 +376,7 @@ a{
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
     #main{
-        padding: 0 71px 0 70px;
+        padding: 0 70px 0 70px;
     }
 
 
@@ -397,14 +394,26 @@ a{
         padding: 10px 3px 10px;
     }
 
-
-    /* lodging-all */
-    #lodging-all{
+    /* lodging */
+    
+    .lodging-container{
         flex-direction: column;
     }
 
+    #lodging-all{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .accommodations{
+        padding-bottom: 46px;
+        margin-right: 0;
+    }
+
     .populars{
-        margin-top: 53px;
+        margin-top: 34px;
+        width: 100%;
+        padding-bottom: 48px;
     }
 
     .populars-cards-container{
@@ -413,11 +422,15 @@ a{
         max-width: fit-content;
     }
 
+    .populars-cards-container > article{
+        width: 31%;
+    }
+
     .popular-card{
         max-width: 252px;
         height: 144px;
         margin-bottom : 0px;
-        width: 30%;
+        width: 100%;
     }
 
     .popular-card-img{
@@ -425,11 +438,7 @@ a{
     }
 
     .popular-txt{
-        padding: 8px 12px 10px;
-    }
-
-    .popular-txt > div > p:first-of-type{
-        font-size: 14px;
+        padding: 8px 12px 10px 10px;
     }
 
     .popular-txt > div > p{
@@ -495,6 +504,10 @@ a{
 
 
     /* footer*/
+    footer{
+        padding: 0;
+    }
+
     .footer-container{
         flex-direction: column;
         padding-top: 0;
@@ -574,8 +587,8 @@ a{
     }
 
 
-    /* lodging-all */
-    #lodging-all{
+    /* lodging */
+    .lodging-container{
         flex-direction: column-reverse;
         padding: 0;
     }
@@ -595,24 +608,21 @@ a{
     }
 
     .accommodations-container{
+        width: 100%;
         flex-direction: column-reverse;
     }
 
-    
-    .accommodation-card{
-        max-width: 98%;
+
+    #lodging-pop{
+        justify-content: center;
     }
 
     .populars{
-        padding: 26px 20px 20px 20px;
-    }
-
-    .popular-card{
-        max-width: 98%;
+        width: 100%;
     }
 
     .populars-cards-container{
-        max-width:100%;
+        max-width: 100%;
     }
 
     
