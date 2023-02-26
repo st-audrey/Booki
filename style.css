@@ -27,6 +27,10 @@ h1, h2, h3{
     justify-content: left;
 }
 
+.justify-right{
+    justify-content: right;
+}
+
 .justify-center{
     justify-content: center;
 }
@@ -59,7 +63,7 @@ h1, h2, h3{
     height: 100%;
 }
 
-#header, #main{
+#header, #main, footer{
     padding: 0 50px 0;
 }
 
@@ -245,8 +249,14 @@ a{
 }
 
 
+/* LODGING-ALL */
+#lodging-all{
+    flex-grow: 2;
+}
 
-/* LODGING */
+#lodging-pop{
+    flex-grow: 1;
+}
 
 .accommodations, .populars{
     background-color: #F2F2F2;
@@ -255,8 +265,6 @@ a{
 
 .accommodations{
     padding: 42px 40px 0px;
-    margin-right: 10px;
-    flex-grow: 2;
 }
 
 .accommodations > p {
@@ -310,7 +318,6 @@ a{
 
 .populars{
     padding: 41px 40px 0px 37px;
-    flex-grow: 1;
 }
 
 .fa-chart-line{
@@ -342,16 +349,19 @@ a{
     max-height: 128px;
 }
 
+
  /* ACTIVITIES */
- .activities-container{
+.activities-container{
     margin-top: 1.5rem;
     margin-bottom: 80px;
 }
 
-.activity-card{
+.activities-container > article{
     width: 23%;
+}
+
+.activity-card{
     max-height: 445px;
-    justify-content: start;
     cursor: pointer;
 }
 
@@ -373,13 +383,13 @@ a{
 
 
 
-
 /* tablet */
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
     #main{
         padding: 0 71px 0 70px;
     }
+
 
      /* search-filter */
     .filters-title{
@@ -396,8 +406,8 @@ a{
     }
 
 
-    /* lodging */
-    #lodging{
+    /* lodging-all */
+    #lodging-all{
         flex-direction: column;
     }
 
@@ -434,8 +444,8 @@ a{
         font-size: 13px;
     }
 
-    /* activities */
 
+    /* activities */
     #activities{
         margin-top: 76px;
     }
@@ -448,6 +458,7 @@ a{
         max-height: 211px;
     }
 }
+
 
 /* phone */
 @media screen and (max-width: 768px) {
@@ -501,6 +512,7 @@ a{
         margin-top: 2rem;
         width: 100%;
     }
+
 
     /* search-filter */
     #search-filter{
@@ -565,9 +577,8 @@ a{
     }
 
 
-    /* lodging */
-
-    #lodging{
+    /* lodging-all */
+    #lodging-all{
         flex-direction: column-reverse;
         padding: 0;
     }
@@ -607,8 +618,8 @@ a{
         max-width:100%;
     }
 
+    
     /* activities */
-
     #activities{
         padding: 0 20px 0 20px;
         margin-top: 4rem;
