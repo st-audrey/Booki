@@ -63,18 +63,18 @@ h1, h2, h3{
     height: 100%;
 }
 
-#header, #main, footer{
-    padding: 0 50px 0;
-}
-
 a{
     text-decoration: none;
     color: black;
 }
 
+.header, #main, footer{
+    padding: 0 50px 0;
+}
+
 
 /* HEADER */
-#header{
+.header{
     margin-bottom: 63px;
 }
 
@@ -84,7 +84,7 @@ a{
     object-fit: contain;
 }
 
-.header-container > nav{
+.header > nav{
     margin-right: 0;
 }
 
@@ -127,16 +127,11 @@ a{
 }
 
 
-#main > p {
+.show-more-txt {
     margin-top: 8px;
 }
 
 /* SEARCH-FILTER*/
-
-#search-filter{
-    width: 100%;
-}
-
 .search-container{
     margin: 20px 0 35px 0;
     width: 100%;
@@ -205,6 +200,8 @@ a{
 
 .filters-btn-container > button:hover{
     background-color: #DEEBFF;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 
@@ -469,13 +466,13 @@ a{
 @media screen and (max-width: 768px) {
 
     
-    #header, #main{
+    .header, #main{
         padding: 0;
     }
 
 
     /* header*/
-    .header-container{
+    .header{
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -485,22 +482,22 @@ a{
         margin: 48px auto;
     }
 
-    .header-container > nav{
+    .header > nav{
         width: 100%;
     }
 
-    .header-container > nav > ul{
+    .header > nav > ul{
       padding-left: 0;
     }
 
-    .header-container > nav > ul > li{
+    .header > nav > ul > li{
         width: 100%;
         border-top: none;
         border-bottom: 3px solid transparent;
         padding-bottom: 20px;
     }
 
-    .header-container > nav > ul > li:hover{
+    .header > nav > ul > li:hover{
         border-top: none;
         color: #0065FC;
         border-bottom: 3px solid #0065FC;

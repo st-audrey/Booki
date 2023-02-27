@@ -13,28 +13,26 @@
 
 <body>
 
-    <header id="header">
-        <div class="header-container d-flex flex-row justify-between">
-            <img class="logo" src="images/logo/Booki.png" alt="Logo Booki">
-            <nav>
-                <ul class="d-flex m-0">
-                    <li class="nav-link txt-16"><a href="#lodging">Hébergements</a></li>
-                    <li class="nav-link txt-16"><a href="#activities">Activités</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="header d-flex flex-row justify-between">
+        <img class="logo" src="images/logo/Booki.png" alt="Logo Booki">
+        <nav>
+            <ul class="d-flex m-0">
+                <li class="nav-link txt-16"><a href="#lodging-all">Hébergements</a></li>
+                <li class="nav-link txt-16"><a href="#activities">Activités</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main">
 
-        <section id="search-filter">
+        <section id="search-filter" class="w-100">
 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="txt-16">En plein centre-ville ou en pleine nature</p>
 
             <form class="search-container" action="#" method="get">
                 <i class="fas fa-map-marker-alt"></i>
-                <input class="txt-16 wght-7" type="text" id="#" name="#">
+                <input class="txt-16 wght-7" type="text" id="location" name="search_location">
                 <button type="submit">
                     <span>Rechercher</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -52,14 +50,11 @@
             </div>
 
             <div class="info-container d-flex flex-row justify-left">
-                <div>
-                    <i class="fa-solid fa-info"></i>
-                </div>
+                <div><i class="fa-solid fa-info"></i></div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
         </section>
-
 
         <div class="lodging-container d-flex">
 
@@ -174,7 +169,7 @@
                             </article> 
                             
                         </div>
-                        <p class="wght-7">Afficher plus</p>
+                        <p class="show-more-txt wght-7">Afficher plus</p>
                     </div>
     
                 </div>
@@ -305,22 +300,22 @@
         <nav class="footer-container d-flex flex-row">
 
             <ul class="txt-16 m-0">
-                <li>À propos</li>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales</li>
-                <li>Données et confidentialité</li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
             </ul>
 
             <ul class="txt-16 m-0">
-                <li>Nos hébergements</li>
-                <li>Charte qualité</li>
-                <li>Proposer votre hôtel</li>
+                <li><a href="#">Nos hébergements</a></li>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Proposer votre hôtel</a></li>
             </ul> 
 
             <ul class="txt-16 m-0">
-                <li>Assitance</li>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+                <li><a href="#">Assitance</a></li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
             </ul> 
 
         </nav>
