@@ -349,6 +349,10 @@ a{
     margin-bottom: 80px;
 }
 
+.activities-container > article{
+    width: 23%;
+}
+
 .activity-card{
     max-height: 445px;
     cursor: pointer;
@@ -636,6 +640,10 @@ a{
         width: 100%;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .activities-container > article{
+        width: 100%;
     }
 
     .activity-card{
