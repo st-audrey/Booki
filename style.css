@@ -329,6 +329,7 @@ a{
 .popular-card-img{
     width:33%; 
     max-height: 144px;
+    min-width: 115px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     margin: 0;
@@ -434,6 +435,7 @@ a{
 
     .popular-card-img{
         width: 29%;
+        min-width: 55px;
         object-fit: cover;
     }
 
