@@ -435,7 +435,7 @@ a{
 
     .popular-card-img{
         width: 29%;
-        min-width: 55px;
+        min-width: 50px;
         object-fit: cover;
     }
 
