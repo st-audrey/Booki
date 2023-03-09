@@ -327,16 +327,15 @@ a{
 }
 
 .popular-card-img{
-    width:33%; 
+    width:90px; 
     max-height: 144px;
-    min-width: 115px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     margin: 0;
 }
 
 .popular-txt{
-    padding: 15px 16px 12px 22px;
+    padding: 12px;
     max-height: 128px;
 }
 
@@ -574,11 +573,11 @@ a{
     .filters-btn-container > button{
         padding: 20px 4px 20px;
         justify-content: left;
-        font-size: 11px;
+        font-size: 10px;
         width: 100%;
         height: 50px;
         margin: 0 auto;
-        align-content: center;
+        align-items: center;
     }
 
     .filters-btn-container > button > i{
